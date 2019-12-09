@@ -91,9 +91,9 @@ const createPetsModel = (pets) => {
 
 
 
-const task = cron.schedule('*/60 * * * *', () => {
+const task = cron.schedule('1 * * * *', () => {
 
-   axios.get('')
+   axios.get('grant_type=client_credentials&client_id=tsSQGgjBUm3AHq0qqDHMGftj9SJCjyYOmo7JOTPNSn4dSfMld2&client_secret=BmksYdt4ImlITTl7HliFDcXPKGD2waofrfXeLSFw')
     .then( (response) => {
         const writePetsModelListToPersist = (pet_list) => {
 
