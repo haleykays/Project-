@@ -1,0 +1,4 @@
+MONGODB_ATLAS_USER=hksmith2 
+MONGODB_ATLAS_PWD=ko8szmapES6mhx1d
+MONGODB_ATLAS_URL=mongodb+srv://hksmith2:ko8szmapES6mhx1d@firstcluster-tlqom.mongodb.net/Pets?retryWrites=true&w=majority
+

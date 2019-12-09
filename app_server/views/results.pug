@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    .row
+        .col-12.col-md-8
+            .container
+                .row
+                .col
+                    h1.text-center Search Results
+                    form(action='arrivals', method='POST')
+                        select(name='selectedAirport')
+                            each airport in airports
+                                option(value=airport) #{airport}
+                        input(type='submit', value='Submit')
+                    p #{selectedAirport}
+                    p #{message}
+
+                .row
+                    .col
+                        .table-responsive
+                        table.table.table-sm.table-hover
+                            thead
+                                tr
+                                    th type
+                                    th breed
+                                    th age
+                                    th color
+                            tbody
+                                each client in clients
+                                    tr
+                                        td #{pets.type}
+                                        td #{pets.breed}
+                                        td #{pets.age}
+                                        td #{pets.color}
+
